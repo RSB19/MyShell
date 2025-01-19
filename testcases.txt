@@ -1,0 +1,187 @@
+testcases.txt:
+
+1. echo hello
+
+Output:
+
+hello
+
+2. pwd
+
+3. cd extras
+
+Output:
+
+None (we are now in the extras directory)
+
+4. cd subextras
+
+Output:
+
+None (we are now in the subextras directory)
+
+5. pwd
+
+Output:
+/common/home/rsb204/CS214/P3/extras/subextras
+
+6. cd fakedir
+
+Output:
+
+cd: No such file or directory
+
+7. cd ../.. 
+
+Output:
+
+None (we are now in the P3 directory)
+
+8. exit whoops leaving now
+
+Output:
+whoops
+leaving
+now
+Exiting my shell. Goodbye!
+
+9. SEQUENCE of commands:
+(inside myscript.sh)
+
+false
+then echo should not print
+true
+then echo should print
+false
+else echo should print
+true
+else echo should not print
+
+Output:
+
+should print
+should print
+
+
+10. sort mywords.txt > result.txt
+
+Output:
+
+Words are sorted and are put into the file result.txt, it if exists or not it will be created
+
+11. grep hi < mywords.txt
+
+Output:
+Thievul
+Pincurchin
+Urshifu
+
+12. sort mywords.txt | grep ra
+
+Output:
+Barraskewda
+Cinderace
+Copperajah
+Cramorant
+Dracovish
+Dracozolt
+Dragapult
+Drakloak
+Duraludon
+Grapploct
+Regidrago
+Silicobra
+
+Notice how it's in order. 
+
+13. Sequence of commands:
+
+Assuming we are in the working directory P3
+
+cd extras
+
+sort *.txt | grep ra
+
+Output:
+
+bizrate
+draft
+monorail
+pranks
+programas
+spraying
+
+14. Sequence of commands:
+
+Assuming we are in the working directory extras
+
+cd subextras
+
+sort *.txt | grep la
+
+Output:
+
+classe
+habla
+lastly
+
+15. In the working directory extras
+
+ls test*file.txt
+
+Output:
+
+test1file.txt  test2file.txt
+
+16. In the working directory P3
+
+ls extras/test*file.txt
+
+Output:
+extras/test1file.txt  extras/test2file.txt
+
+17. In the working directory P3
+
+ls *.c *.txt
+
+Output:
+myshell.c  mywords.txt  README.txt  testcases.txt
+
+18. In the working directory subextras
+
+sort file1.txt | grep ra < file2.txt
+
+Output:
+temporal
+radon
+tracking
+brackets
+
+Notice that these words are NOT in file1.txt, which means that the STDIN_FILENO coming from the pipe
+is presumed to be lost!
+
+We can verify with grep:
+
+grep WORDS file1.txt
+and it should not return anything 
+
+19. pwd > result1.txt
+
+Output:
+
+Nothing (but creates a file called result1.txt, if it doesn't exist
+with the contents of the current working directory)
+
+20. which grep > result2.txt
+
+Output:
+
+Nothing (but creates a file called result2.txt, if it doesn't exist,
+with the contents of the path of what mysh would use if asked to start program)
+
+21. then exit whoops leaving now > result3.txt
+
+Output:
+Exits the program mysh, but creates a file called result3.txt, if it doesn't exist,
+with the contents of "whoops leaving now" along with the goodbye message:
+"Exiting my shell. Goodbye!".

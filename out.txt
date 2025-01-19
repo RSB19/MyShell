@@ -1,0 +1,4 @@
+README.txt
+mywords.txt
+out.txt
+testcases.txt
