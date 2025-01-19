@@ -134,5 +134,35 @@ dmysh turns on DEBUG mode and prints out the Tokens read PER line either in inte
 or in batch mode. This helps use to see if our implementation is correctly parsing out the tokens
 and determining how to run the commands.
 
+## Instructions
+
+In order to run the myShell implementation, please type or copy and paste the following commands into the terminal after downloading the tar file:
+
+```
+tar -xf your-p3.tar
+cd P3
+make
+```
+
+Remember, you can also type `make all` to create the debug myShell if you would like for debugging.
+
+If you don't want to use the tar, you can just use the files present in this repository and run the shell below:
+
+```
+./mysh <commands/file>
+```
+
+Here, you can either run myShell in batch mode or interactive mode. Note that for interactive mode, you have to only type:
+
+```
+./mysh
+```
+
+And for batch mode, you can pass in the relevant files and/or commands to execute them all at once!
+
+
+
+
+
 
 Copyright ⓒ Rohit Bellam
