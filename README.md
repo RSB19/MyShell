@@ -4,8 +4,9 @@
 Rohit Bellam  - rsb204\
 Vatsal Malkari - vm593
 
-NOTE: At the end of this file is instructions on how to use the Makefile! If you would like more detailed information about this project, 
-please navigate to the report.txt file for more in-depth details!
+NOTE: At the end of this file is instructions on how to use the Makefile! If you would like more detailed information about the project implementation, please navigate to the report.txt file below:
+
+[Report](https://github.com/RSB19/MyShell/blob/main/report.txt)
 
 ## Overview
 
